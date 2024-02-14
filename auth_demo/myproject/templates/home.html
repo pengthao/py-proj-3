@@ -2,12 +2,13 @@
 
 {% block content %}
 <div class="jumbotron">
-    <h1>Welcome to our Melon Shop!</h1>
     {% if current_user.is_authenticated %}
     <p>Hi {{current_user.username}}!</p>
     {% else %}
     <p>Please login or register</p>
     {% endif %}
+    <h1>Welcome to our Melon Shop!</h1>
+    <p>Please select one of the links from the nav bar.</p>
     <img class="container mx-auto" src="https://shorturl.at/fzFLO" alt="Melon Shop Image">
 </div>
 {% endblock %}

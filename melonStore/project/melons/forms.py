@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, IntegerField, SubmitField
+from wtforms import SubmitField, IntegerField
 
 class AddForm(FlaskForm):
 
-    name = StringField('Name of Puppy: ')
-    submit = SubmitField('Add Puppy')
+    quantity = IntegerField('Quantity: ')
+    submit = SubmitField('Add to Cart')
